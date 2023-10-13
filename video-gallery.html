@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="TR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Gallery</title>
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="responsive_phone.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      href="responsive_tablet.css"
+    />
+
+    <!--fontawesome -- Google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Other library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="video-gallery">
+    <section class="main">
+      <div class="container">
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo fa-solid fa-leaf"></label>
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="img-gallery.html">Resim Galerisi</a></li>
+            <li><a href="video-gallery.html">Video Galerisi</a></li>
+            <li><a href="upload-file.html">Resim / Video Yükle</a></li>
+            <li><a href="login.html">Kayıt / Giriş</a></li>
+            <li>
+              <input type="text" placeholder="Resim/Video ara" class="search" />
+            </li>
+
+            <li class="categories-h" style="display: none">
+              <h3>Kategoriler</h3>
+            </li>
+            <li class="categories-nav" style="display: none">
+              <a href="#">Doğa/Natural</a>
+            </li>
+            <li class="categories-nav" style="display: none">
+              <a href="#">Motorsiklet/Araba</a>
+            </li>
+            <li class="categories-nav" style="display: none">
+              <a href="#">İnsan/Hayvanlar</a>
+            </li>
+            <li class="categories-nav" style="display: none">
+              <a href="#">Aşk/Duygu</a>
+            </li>
+            <li class="categories-nav" style="display: none">
+              <a href="#">Developer</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- <div class="card-wrapper">
+          <div class="card-img">
+            <img src="assets/pic-1.jpg" alt="card-video-1" />
+          </div>
+
+          <div class="card-img">
+            <img src="assets/pic-2.jpg" alt="card-video-1" />
+          </div>
+
+          <div class="card-img">
+            <img src="assets/pic-3.jpg" alt="card-video-1" />
+          </div>
+        </div> -->
+      </div>
+
+      <main>
+        <div class="sidebar-wrapper">
+          <ul class="sidebar-items">
+            <li class="sidebar-item"><a href="#">Doğa</a></li>
+            <li class="sidebar-item"><a href="#">Motorsiklet</a></li>
+            <li class="sidebar-item"><a href="#">İnsan</a></li>
+            <li class="sidebar-item"><a href="#">Aşk</a></li>
+            <li class="sidebar-item"><a href="#">Duvar Kağıdı</a></li>
+          </ul>
+        </div>
+
+        <section class="video">
+          <div class="card-video">
+            <a href="#">
+              <video
+                autoplay
+                loop
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                autoplay
+                loop
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                autoplay
+                loop
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+          <div class="card-video">
+            <a href="#">
+              <video
+                class="video-src"
+                src="assets/nav.mp4"
+                type="type/mp4"
+              ></video>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <script src="main.js"></script>
+    </section>
+  </body>
+</html>

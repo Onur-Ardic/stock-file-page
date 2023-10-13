@@ -1,0 +1,813 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Prompt:ital,wght@1,100&display=swap");
+
+:root {
+  /* -------------------------------- Color --------------------------------*/
+  --color-black: #181818;
+  --color-white: #fafafa;
+  --color-text-white: #e4f1ff;
+  --color-text-black: #0000;
+  --color-btn-orange: #ee9322;
+
+  /* -------------------------------- Fonts --------------------------------
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Prompt', sans-serif;
+*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* --------------------------------Navigation - Start --------------------------------*/
+
+.nav-wrapper section {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.nav-wrapper video {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  filter: brightness(50%);
+  object-fit: fill;
+}
+
+nav {
+  position: relative;
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: var(--color-btn-orange);
+  font-size: 17px;
+  font-weight: bold;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: 0.2px solid var(--color-btn-orange);
+}
+
+.logo {
+  padding: 1.4rem;
+}
+nav ul li a.active {
+  color: #fff;
+}
+nav ul li a:hover {
+  background: var(--color-text-white);
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+section .content {
+  position: relative;
+  text-align: center;
+  top: 60%;
+  padding-top: 10rem;
+}
+
+section .content h3 {
+  font-size: 7rem;
+  font-weight: bold;
+  color: var(--color-text-white);
+  font-family: "Prompt", sans-serif;
+  transition: 0.5s;
+}
+
+section .content h3:hover {
+  -webkit-text-stroke: 2px var(--color-black);
+  color: transparent;
+  font-family: "Anton", sans-serif;
+}
+
+/*----------------------------------------Navigation End--------------------------------------------------*/
+/*----------------------------------------İmage Gallery Start--------------------------------------------------*/
+.img-gallery {
+  background-color: #d2e0fb;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav ul input {
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  height: 30px;
+  padding: 0.6rem 0.8rem;
+}
+
+.categories-h {
+  font-size: 1.3rem;
+  padding: top 0.2rem;
+  color: #fff;
+  border-top: 1px solid #d2e0fb;
+}
+
+.img-gallery main {
+  display: grid;
+  grid-template-columns: auto 83vw;
+  gap: 1rem;
+  height: 100vh;
+}
+
+.sidebar-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-btn-orange);
+  width: 100%;
+  text-align: center;
+  height: 487px;
+  line-height: 6rem;
+  border-radius: 10px;
+  padding-top: 0.2rem;
+}
+
+.sidebar-wrapper a {
+  display: block;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 300;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.sidebar-wrapper a:hover {
+  background-color: transparent;
+  transition: 0.7s;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.images .card-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.images .card-image > .image-title {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-text-white);
+}
+
+/*__________________________________________Video Page______________________________________________________*/
+.video-gallery {
+  background-color: #d2e0fb;
+  font-family: "Montserrat", sans-serif;
+}
+.video-gallery main {
+  display: grid;
+  grid-template-columns: auto 81vw;
+  gap: 1rem;
+  height: 100vh;
+}
+
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1rem;
+}
+
+.video-gallery .card-video {
+  width: 25 0px;
+  height: min-content;
+  padding: 1rem;
+}
+
+.video-gallery .card-video video {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/*----------------------------------------İmage Gallery End--------------------------------------------------*/
+/*----------------------------------------image-video - dowloand-page start--------------------------------------------------*/
+.image-dowloand-page {
+  background-color: #d2e0fb;
+  font-family: "Montserrat", sans-serif;
+}
+
+.image-dowloand-page .main-wrapper-dw {
+  height: 90vh;
+}
+
+.container-dw-page {
+  display: grid;
+  grid-template-columns: 70vw 20vw;
+  gap: 1rem;
+  width: 100%;
+}
+
+.image-dowloand-wrapper {
+  position: relative;
+  top: 10%;
+}
+
+.left {
+  margin: 0 auto;
+}
+
+.image-dowloand-wrapper img {
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.right {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+}
+
+.right .info-area {
+  width: 300px;
+  background-color: #fafafa;
+  height: 200px;
+  padding: 1rem;
+  line-height: 4rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.right .info-area .user-info {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.dropbtn {
+  display: block;
+  width: 100%;
+  background-color: var(--color-btn-orange);
+  color: var(--color-text-white);
+  padding: 0.7rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/*---------- other image -----------*/
+
+.other-image-wrapper {
+  height: 90vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.other-image-wrapper .other-image h4 {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+  width: auto;
+}
+
+.container-img-dw {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -50px;
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*----------------------------------------image-dowloand-page End--------------------------------------------------*/
+/*-----------------------------------------Upload - File End--------------------------------------------------*/
+.upload-file {
+  background-color: #d2e0fb;
+  font-family: "Montserrat", sans-serif;
+}
+
+.upload-wrapper {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 60vh;
+}
+
+.left-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left-upload .input-wrapper {
+  text-align: center;
+  height: min-content;
+  width: 400px;
+  background-color: #ee9322;
+  padding: 1rem;
+  border-radius: 7px 7px 0px 0px;
+  line-height: 3rem;
+  border-bottom: 0.3px solid #fff;
+}
+
+.left-upload .input-wrapper textarea {
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.left-upload .select select {
+  width: 70%;
+  padding: 0.4rem;
+  border: none;
+  text-align: center;
+}
+
+.left-upload input::file-selector-button {
+  width: 100%;
+  background-color: #fff;
+  color: var(--color-btn-orange);
+  border-radius: 2px;
+  text-align: center;
+  padding: 0.4rem;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.left-upload button {
+  width: 100%;
+
+  padding: 0.7rem;
+  border-radius: 0px 0px 7px 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.left-upload button:hover {
+  background-color: var(--color-btn-orange);
+}
+
+.right-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-upload img {
+  width: 800px;
+  border-radius: 10px;
+}
+
+/* =====================================Sign-up - Login - Page =================================*/
+.Signup-Login-Page {
+  background-color: #d2e0fb;
+  height: 90vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-login {
+  background-color: var(--color-white);
+  width: 500px;
+  height: min-content;
+  margin: 0 auto;
+  position: relative;
+  top: 35%;
+  transform: translate(-50);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.container-login h3 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.container-login .input-area {
+  padding: 0.4rem;
+  text-align: center;
+}
+
+.container-login .input-area .name {
+  padding: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.container-login .input-area label {
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+}
+
+.container-login .input-area input {
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+}
+
+.container-login .input-area .fargot-password {
+  font-size: 0.8rem;
+}
+
+.container-login .button {
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.container-login .login-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.container-login .login-btn button {
+  padding: 0.4rem 2rem;
+  border: 0.2px solid var(--color-white);
+  background-color: var(--color-btn-orange);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container-login .login-btn button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 0.2px solid var(--color-btn-orange);
+}
+
+/* =====================================Profile=================================*/
+
+.profile {
+  background-color: #d2e0fb;
+  font-family: "Montserrat", sans-serif;
+}
+
+.file-wrapper {
+  padding: 2rem;
+}
+.profile main .profile-wrapper {
+  width: 100%;
+  height: min-content;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 2rem 5rem;
+}
+
+.profile main .profile-wrapper .profile-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile main .profile-wrapper .profile-card .user-info-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile main .profile-wrapper .profile-card .user-pic .user-info {
+  display: flex;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+.profile main .profile-wrapper .profile-card .description {
+  padding-left: 0.6rem;
+}
+
+.profile main .profile-wrapper .profile-card .description a {
+  color: var(--color-btn-orange);
+}
+
+.profile main .profile-wrapper .profile-card .user-pic img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid var(--color-btn-orange);
+  border-radius: 100%;
+}
+
+.profile main .profile-wrapper .profile-card .info-social {
+  font-size: 1.9rem;
+  padding: 0.8rem;
+}
+
+.profile main .profile-wrapper .profile-card .info-wrapper i {
+  color: #3e8e41;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.profile main .profile-wrapper .profile-card .info-wrapper label {
+  font-size: 1.4rem;
+}
+
+.profile main .profile-wrapper .profile-card .info-social span {
+  color: #3e8e41;
+}
+
+.profile main .middle {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.profile main .middle a {
+  color: var(--color-black);
+}
+
+.profile main .middle .box {
+  width: 450px;
+  padding: 1rem;
+  background-color: var(--color-white);
+  border-radius: 7px;
+}
+.profile main .middle .box .head-box {
+  padding: 1rem;
+}
+
+.profile main .middle .box .head-box h3 {
+  color: var(--color-text-black);
+}
+
+.profile main .middle .box .middle-box {
+  display: flex;
+  justify-content: center;
+}
+
+.profile main .middle .box .middle-box img {
+  width: 400px;
+  border-radius: 7px;
+}
+
+.profile main .middle .box .box-bottom {
+  padding: 1rem;
+}
+
+.profile .profile-nav {
+  background-color: var(--color-text-white);
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem;
+}
+
+.profile .profile-nav span {
+  font-size: 1.5rem;
+}
+
+.profile .profile-nav .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.profile .profile-nav .buttons a {
+  font-size: 1.2rem;
+  color: #3e8e41;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.profile .profile-nav .buttons a:hover {
+  background-color: var(--color-btn-orange);
+  padding: 0.4rem;
+  transition: 0.5s;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.profile .middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+/*------------------------------404 Page---------------------*/
+.notFoundPage {
+  background-color: #181818;
+  font-family: "Montserrat", sans-serif;
+}
+.container .text h4 {
+  font-size: 16rem;
+  color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+}
+
+.container .text p {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-btn-orange);
+}
+/*------------------------------404 Page End---------------------*/
+
+/*------------------------------404 Page End---------------------*/
+.Password-Restart {
+  background-color: #181818;
+  height: 100vh;
+  width: 100vw;
+}
+.Password-Restart section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+.Password-Restart .container {
+  background-color: var(--color-white);
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.Password-Restart .container .card {
+  padding: 1rem;
+}
+
+.Password-Restart .container .card i {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Password-Restart .container .card h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.Password-Restart .container .card .input {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Password-Restart .container .card .input input {
+  padding: 0.7rem;
+  color: #000;
+  border: 1px solid var(--color-btn-orange);
+  border-radius: 3px;
+  outline: none;
+  width: 300px;
+}
+
+.Password-Restart .container .card .passwordBtn {
+  padding: 0.4rem;
+  display: block;
+  color: var(--color-text-white);
+  border: 1px solid var(--color-btn-orange);
+  background-color: var(--color-btn-orange);
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+  left: 38%;
+}
+
+.Password-Restart .container .card .passwordBtn:hover {
+  background-color: transparent;
+  color: var(--color-black);
+}
